@@ -28,11 +28,11 @@ function draw() {
   if(hasCollided(bullet,wall)){
     
     if(damage>10){
-      wall.shapeColor(255,0,0);
+      wall.shapeColor = rgb(255,0,0);
     }
 
     if(damage<10){
-      wall.shapeColor(0,255,0);
+      wall.shapeColor = rgb(0,255,0);
     }
     bullet.velocityX = 0;
   }
